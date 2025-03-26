@@ -1,5 +1,5 @@
 import './index.css'
-import {Link,Outlet} from 'react-router-dom'
+import {Link,Outlet} from 'react-router'
 import logo from '../../assets/weblogo1.jpg'
 import bodyimage from '../../assets/cdef.png'
 import mypic from '../../assets/myimage.png'
@@ -188,7 +188,7 @@ class Body extends Component{
                             <input type="text" name="Name" placeholder="Your Name" required/>
                             <input type="email" name="email" placeholder="Your Email" required/>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" className="btn btn2">Submit</button>
+                            <button type="submit"  className="btn btn2">Submit</button>
                         </form>
                     </div>               
                 </div>
