@@ -173,7 +173,7 @@ nav ul li button:hover::after {
     margin-left: -10px;
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
-    background: url(C:\Users\heman\Desktop\reactjio\myapp\src\assets\back.png);
+    background: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
