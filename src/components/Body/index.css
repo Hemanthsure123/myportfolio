@@ -1,0 +1,627 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-div {
+    background-image: linear-gradient(to bottom, #355c7d, #cbb4d4, #ACB6E5);
+}
+
+.header-container {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    background-color: #355C7D;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo-png {
+    width: 200px;
+    height: 70px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.logo-btn {
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-style: italic;
+    background-color: transparent;
+}
+
+.logo-span {
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+    background-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+nav ul li button::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li button:hover::after {
+    width: 100%;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    ;
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.header-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 5%;
+}
+
+.body-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.about-me-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.portfolio-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.work {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.contact {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.footer {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 0%;
+}
+
+.body-png {
+    width: 40%;
+    height: 40%;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.text-box {
+    color: #ffffff;
+    position: absolute;
+    margin: 30px;
+}
+
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1 {
+    font-size: 120px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    background: url(C:\Users\heman\Desktop\reactjio\myapp\src\assets\back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    min-height: 600px;
+    max-height: 800px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid white;
+}
+
+.my-png {
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 40px;
+    opacity: 2;
+}
+
+.about-heading {
+    font-weight: 600;
+    font-size: 64px;
+    color: #355C7D;
+}
+
+.about-me-content {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+.about-me-description {
+    font-size: 28px;
+    font-weight: 100;
+    color: white;
+    font-style: italic;
+}
+
+.about-me-btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.about-btn {
+    margin-right: 44px;
+    font-size: 24px;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    color: #EDEADE;
+    cursor: pointer;
+    position: relative;
+}
+
+.about-btn.activeSkill {
+    border: 3px solid #355C7D;
+    border-radius: 8px;
+    background-color: transparent;
+    min-width: 100px;
+    max-width: 250px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.about-btn.activeEducation {
+    border: 3px solid #355C7D;
+    border-radius: 8px;
+    background-color: transparent;
+    min-width: 120px;
+    max-width: 250px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.about-btn.activeProject {
+    border: 3px solid #355C7D;
+    border-radius: 8px;
+    background-color: transparent;
+    min-width: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 250px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.about-btn::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #355C7D;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.about-btn:hover::after {
+    width: 100%;
+}
+
+.display-content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.languages {
+    width: 80%;
+    height: fit-content;
+    margin: 15px;
+}
+
+.skill-set {
+    font-weight: 500;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #355C7D;
+    margin: 25px 15px 15px 15px;
+}
+
+.skill-set-items {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ff004f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #EDEADE;
+    width: fit-content;
+}
+
+.skill-item {
+    font-weight: 400;
+    font-size: 28px;
+    color: #EDEADE;
+    line-height: 2;
+    margin-left: 10px;
+}
+
+.skill-item-span {
+    font-weight: bold;
+    font-family: 34px;
+    color: #355c7d;
+    font-style: italic;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-heading {
+    font-weight: 500;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #355C7D;
+    margin: 25px 15px 15px 15px;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education {
+    color: #355C7D;
+    font-size: 28px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.education-time {
+    color: #EDEADE;
+    font-size: 28px;
+    margin-right: 60px;
+    margin-top: 15px;
+}
+
+.education-time-1 {
+    color: #EDEADE;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.education-time-2 {
+    color: #EDEADE;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-left: 110px;
+}
+
+.grade {
+    color: #EDEADE;
+    font-size: 28px;
+    margin: 15px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-work {
+    color: #355c7d;
+    font-size: 50px;
+    margin: 80px;
+}
+
+.my-work-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.work-text {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.work-description {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), #355c7d);
+    background-color: transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.5s;
+    font-size: 14px;
+}
+
+.link-icon {
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    color: black;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+}
+
+.link-x {
+    background-color: transparent;
+}
+
+.work:hover img {
+    transform: scale(1.4);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.sub-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-send {
+    color: white;
+    font-size: 25px;
+}
+
+.send-icon {
+    color: #355C7D;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: whitesmoke;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #355C7D;
+    transform: translateY(-5px);
+}
+
+.send-icon {
+    align-self: center;
+}
+
+.contact-send {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    text-decoration: none;
+    background: #355C7D;
+    color: white;
+    width: 120px;
+    height: 44px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    border: 0px;
+    transition: transform 0.5s;
+    margin-top: 20px;
+}
+
+.btn.btn2:hover {
+    background: #355C7D;
+    color: black;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background: #262626;
+    color: white;
+}
+
+.footer-content {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    background-color: transparent;
+}
+
+.heart-icon {
+    color: #ff004f;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    background-color: transparent;
+}
