@@ -32,7 +32,6 @@
     border: 0px;
     outline: none;
     border-radius: 10px;
-    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\youtube.png);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -127,5 +126,5 @@
 
 .social-media-project-4:hover {
     transform: translateY(-10px);
-    transform: scale(1.1    );
+    transform: scale(1.1);
 }

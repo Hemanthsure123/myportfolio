@@ -32,7 +32,6 @@
     border: 0px;
     outline: none;
     border-radius: 10px;
-    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\youtube.png);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -48,7 +47,6 @@
     margin: 30px;
     outline: none;
     border-radius: 10px;
-    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\nextTrends.png);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -64,7 +62,6 @@
     margin: 30px;
     outline: none;
     border-radius: 10px;
-    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\jobbyApp.png);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -80,7 +77,6 @@
     margin: 30px;
     outline: none;
     border-radius: 10px;
-    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\moviesApp.png);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
