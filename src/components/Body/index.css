@@ -173,7 +173,7 @@ nav ul li button:hover::after {
     margin-left: -10px;
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
-    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\bck.png);
+    background-image: url(C:\Users\heman\Desktop\Portfolio\myapp\src\assets\youtube.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
