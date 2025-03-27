@@ -133,7 +133,7 @@ class Body extends Component{
                             <div className='layer' >
                                 <h2 className='work-text'>Music Apps</h2>
                                 <p className='work-description'>The app connects you to the different songs & music around the world</p>
-                                <Link to="/musicapps" className='link-x'><FaExternalLinkAlt className='link-icon' /></Link>
+                                <FaExternalLinkAlt className='link-icon' />
                             </div>
                         </div>
                         <div className='work' >
@@ -141,7 +141,7 @@ class Body extends Component{
                             <div className='layer' >
                                 <h2 className='work-text'>Online Shopping Apps</h2>
                                 <p className='work-description'>The app connects you to shop various items</p>
-                                <Link to="/onlineshopping" className='link-x'><FaExternalLinkAlt className='link-icon' /></Link>
+                                <FaExternalLinkAlt className='link-icon' />
                             </div> 
                         </div>
                         <div className='work' >
